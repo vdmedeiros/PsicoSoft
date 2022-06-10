@@ -40,7 +40,7 @@ namespace Atendimento.WebApp.MVC
 
             services.AddMvcConfiguration(Configuration);
 
-            services.RegisterServices();
+            services.RegisterServices(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

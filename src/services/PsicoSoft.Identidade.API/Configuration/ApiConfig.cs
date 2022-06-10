@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PsicoSoft.WebApi.Core.Identidade;
 
 namespace PsicoSoft.Identidade.API.Configuration
 {
@@ -25,7 +27,7 @@ namespace PsicoSoft.Identidade.API.Configuration
 
             app.UseRouting();
 
-            app.UseIdentityConfiguration();
+            app.UseAuthConfiguration();
 
             app.UseEndpoints(endpoints =>
             {

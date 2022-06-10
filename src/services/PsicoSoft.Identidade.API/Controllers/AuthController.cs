@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using NSE.Identidade.API.Controllers;
-using PsicoSoft.Identidade.API.Extensions;
+using PsicoSoft.WebApi.Core;
 using PsicoSoft.Identidade.API.Models;
+using PsicoSoft.WebApi.Core.Identidade;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -15,7 +15,6 @@ using System.Threading.Tasks;
 
 namespace PsicoSoft.Identidade.API.Controllers
 {
-    [ApiController]
     [Route("api/identidade")]
     public class AuthController : MainController
     {
